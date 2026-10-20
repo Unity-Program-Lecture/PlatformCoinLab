@@ -1,0 +1,21 @@
+{
+    "day": 2,
+    "unity": "6000.6.6f1",
+    "checkedUtc": "2026-10-20T04:28:58.8759487Z",
+    "passed": true,
+    "framesAdvanced": 2150,
+    "checks": [
+        "menu waits for Start",
+        "menu rejects collect",
+        "serialized Start button starts round",
+        "HUD visible during round",
+        "real physics trigger collects coin",
+        "same coin ID cannot score twice",
+        "real elapsed time shows result",
+        "timeout rejects collect",
+        "serialized Restart button resets score",
+        "restart reactivates coins",
+        "menu blocks movement"
+    ],
+    "error": ""
+}
