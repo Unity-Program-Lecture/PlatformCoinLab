@@ -14,6 +14,10 @@ public sealed class GameSession : MonoBehaviour
     [SerializeField] private TMP_Text statusText;
     [SerializeField] private UnityEngine.UI.Button startButton;
 
+    [SerializeField] private TMP_Text bestText;
+
+    private const string BestKey = "PlatformCoinLab.Best";
+    private int best;
     private AudioClip generatedCollectClip;
     private CoinRound round;
     private Vector3 startPosition;
@@ -31,6 +35,7 @@ public sealed class GameSession : MonoBehaviour
 
     private void Awake()
     {
+        best = PlayerPrefs.GetInt(BestKey, 0);
         round = new CoinRound(roundSeconds);
         startPosition = player.position;
 
@@ -160,6 +165,23 @@ public sealed class GameSession : MonoBehaviour
     {
         playing = false;
         showingResult = true;
+        SaveBest();
+    }
+
+    public void SaveBest()
+    {
+        best = Mathf.Max(best, Score);
+        PlayerPrefs.SetInt(BestKey, best);
+        PlayerPrefs.Save();
+    }
+
+    private void OnApplicationPause(bool value)
+    {
+        paused = value;
+        if (value)
+        {
+            SaveBest();
+        }
     }
 
     private void RefreshUi()
@@ -170,5 +192,6 @@ public sealed class GameSession : MonoBehaviour
         startButton.interactable = IsReady;
         hud.text = $"Score: {Score}  Time: {Mathf.CeilToInt(round.Remaining)}";
         resultText.text = $"Score: {Score}";
+        bestText.text = $"Best: {best}";
     }
 }
