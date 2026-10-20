@@ -1,0 +1,16 @@
+{
+  "day": 8,
+  "mode": "Basic",
+  "passed": true,
+  "certificateValidation": "normal",
+  "checks": [
+    "HTTPS health response with normal certificate validation",
+    "JSON HTTP 200",
+    "JSON duration is 45 seconds",
+    "JSON MIME type",
+    "Missing path returns HTTP 404",
+    "Stopped server is a connection failure",
+    "Server restart restores HTTPS response"
+  ],
+  "checkedUtc": "2026-10-20T04:34:35.8407453Z"
+}
