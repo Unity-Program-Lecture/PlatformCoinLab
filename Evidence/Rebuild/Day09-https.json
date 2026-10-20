@@ -1,0 +1,18 @@
+{
+  "day": 9,
+  "mode": "Remote",
+  "passed": true,
+  "certificateValidation": "normal",
+  "checks": [
+    "HTTPS health response with normal certificate validation",
+    "Remote Windows bundle exists",
+    "Bundle HTTPS HTTP 200",
+    "Bundle MIME type",
+    "Bundle response length matches the file",
+    "Packed Addressables HTTPS stage completes the live game flow",
+    "Missing path returns HTTP 404",
+    "Stopped server is a connection failure",
+    "Server restart restores HTTPS response"
+  ],
+  "checkedUtc": "2026-10-20T04:35:06.8845193Z"
+}

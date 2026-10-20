@@ -84,6 +84,20 @@ MonoBehaviour:
         m_Value: 'ServerData/[BuildTarget]'
       - m_Id: e80014d06fa193645ab8f0748e5a1457
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+    - m_InheritedParent: 
+      m_Id: bbf130bba9fb0734e8d191cce4c90734
+      m_ProfileName: RemotePractice
+      m_Values:
+      - m_Id: 3e4f41b5a3974dd4382a287c13821fac
+        m_Value: 'https://localhost:5443/[BuildTarget]'
+      - m_Id: a1d9fa1d476b2d14387faa9405cbe5c8
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: a903362ceb8be064e80373602845e8a3
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: ae5819b650c81e64289f967257cf10cb
+        m_Value: 'ServerData/[BuildTarget]'
+      - m_Id: e80014d06fa193645ab8f0748e5a1457
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
     m_ProfileEntryNames:
     - m_Id: 3e4f41b5a3974dd4382a287c13821fac
       m_Name: Remote.LoadPath
