@@ -132,13 +132,13 @@ GameObject:
   - component: {fileID: 119107399}
   - component: {fileID: 119107398}
   - component: {fileID: 119107397}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &119107396
 RectTransform:
   m_ObjectHideFlags: 0
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 126276966}
   - component: {fileID: 126276968}
   - component: {fileID: 126276967}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -530,7 +530,7 @@ GameObject:
   - component: {fileID: 223437804}
   - component: {fileID: 223437806}
   - component: {fileID: 223437805}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UpLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,7 +598,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -920,7 +920,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 299108441}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MobileControls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,6 +943,7 @@ RectTransform:
   - {fileID: 119107396}
   - {fileID: 2136627332}
   - {fileID: 489326477}
+  - {fileID: 1662663373}
   m_Father: {fileID: 840708783}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15, y: 0.18}
@@ -950,6 +951,119 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 260, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &365985559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365985560}
+  - component: {fileID: 365985561}
+  - component: {fileID: 365985563}
+  - component: {fileID: 365985562}
+  m_Layer: 5
+  m_Name: JoystickHandle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &365985560
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365985559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1662663373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 64, y: 64}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &365985561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365985559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d677f1681015749b15c436eec6d880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.OnScreen.OnScreenStick
+  m_MovementRange: 60
+  m_DynamicOriginRange: 100
+  m_ControlPath: <Gamepad>/leftStick
+  m_Behaviour: 0
+  m_UseIsolatedInputActions: 0
+  m_PointerDownAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0d4dc41b-d6a6-4dcf-87b2-3d105e49d20f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+    m_Priority: 0
+  m_PointerMoveAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3088b273-7574-4ae2-b526-063231e656c5
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+    m_Priority: 0
+--- !u!114 &365985562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365985559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &365985563
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365985559}
+  m_CullTransparentMesh: 1
 --- !u!114 &409170881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,7 +1089,7 @@ GameObject:
   - component: {fileID: 426927622}
   - component: {fileID: 426927624}
   - component: {fileID: 426927623}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1043,7 +1157,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -1114,13 +1228,13 @@ GameObject:
   - component: {fileID: 489326480}
   - component: {fileID: 489326479}
   - component: {fileID: 489326478}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &489326477
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1249,13 +1363,13 @@ GameObject:
   - component: {fileID: 543341702}
   - component: {fileID: 543341701}
   - component: {fileID: 543341700}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &543341699
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1382,7 +1496,7 @@ GameObject:
   - component: {fileID: 573893251}
   - component: {fileID: 573893253}
   - component: {fileID: 573893252}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ResultTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1533,7 +1647,7 @@ GameObject:
   - component: {fileID: 659391876}
   - component: {fileID: 659391875}
   - component: {fileID: 659391874}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StatusText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1670,7 +1784,7 @@ GameObject:
   - component: {fileID: 686217215}
   - component: {fileID: 686217217}
   - component: {fileID: 686217216}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Hint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1936,7 +2050,7 @@ GameObject:
   - component: {fileID: 747751583}
   - component: {fileID: 747751582}
   - component: {fileID: 747751581}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2068,7 +2182,7 @@ GameObject:
   - component: {fileID: 759174385}
   - component: {fileID: 759174387}
   - component: {fileID: 759174386}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2335,7 +2449,7 @@ GameObject:
   - component: {fileID: 828785055}
   - component: {fileID: 828785054}
   - component: {fileID: 828785053}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HudPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2409,7 +2523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 840708783}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SafeAreaRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2450,7 +2564,7 @@ GameObject:
   - component: {fileID: 904616363}
   - component: {fileID: 904616365}
   - component: {fileID: 904616364}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MenuButtonLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2709,7 +2823,7 @@ GameObject:
   - component: {fileID: 1041468579}
   - component: {fileID: 1041468578}
   - component: {fileID: 1041468577}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2825,7 +2939,7 @@ GameObject:
   - component: {fileID: 1216652083}
   - component: {fileID: 1216652085}
   - component: {fileID: 1216652084}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StartButtonLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3135,7 +3249,7 @@ GameObject:
   - component: {fileID: 1302502129}
   - component: {fileID: 1302502128}
   - component: {fileID: 1302502127}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3267,7 +3381,7 @@ GameObject:
   - component: {fileID: 1321633777}
   - component: {fileID: 1321633779}
   - component: {fileID: 1321633778}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DownLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3335,7 +3449,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -3795,7 +3909,7 @@ GameObject:
   - component: {fileID: 1553396754}
   - component: {fileID: 1553396753}
   - component: {fileID: 1553396752}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HudText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3920,6 +4034,42 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1662663372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1662663373}
+  m_Layer: 5
+  m_Name: JoystickBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1662663373
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662663372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 365985560}
+  m_Father: {fileID: 299108441}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1683797225
 GameObject:
@@ -4061,7 +4211,7 @@ GameObject:
   - component: {fileID: 1718128651}
   - component: {fileID: 1718128650}
   - component: {fileID: 1718128649}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5199,7 +5349,7 @@ GameObject:
   - component: {fileID: 2060237759}
   - component: {fileID: 2060237758}
   - component: {fileID: 2060237757}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MenuPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5406,7 +5556,7 @@ GameObject:
   - component: {fileID: 2072186729}
   - component: {fileID: 2072186731}
   - component: {fileID: 2072186730}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RestartButtonLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5543,7 +5693,7 @@ GameObject:
   - component: {fileID: 2073063558}
   - component: {fileID: 2073063560}
   - component: {fileID: 2073063559}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ResultPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5878,7 +6028,7 @@ GameObject:
   - component: {fileID: 2120291962}
   - component: {fileID: 2120291961}
   - component: {fileID: 2120291960}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ResultText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6017,13 +6167,13 @@ GameObject:
   - component: {fileID: 2136627335}
   - component: {fileID: 2136627334}
   - component: {fileID: 2136627333}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2136627332
 RectTransform:
   m_ObjectHideFlags: 0
