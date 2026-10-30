@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(RectTransform))]
 public sealed class SafeAreaFitter : MonoBehaviour
 {
     private RectTransform target;
@@ -22,7 +23,7 @@ public sealed class SafeAreaFitter : MonoBehaviour
 
         previous = safe;
         previousSize = size;
-        
+
         target.anchorMin = new Vector2(safe.xMin / size.x, safe.yMin / size.y);
         target.anchorMax = new Vector2(safe.xMax / size.x, safe.yMax / size.y);
         target.offsetMin = Vector2.zero;
